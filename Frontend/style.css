@@ -1,0 +1,757 @@
+/* Global Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #1c2128;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+} */
+
+header {
+    background-color: #252b33;
+    padding: 10px 20px;
+    display: flex;
+    gap: 1rem 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #7eb5ff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* /////////// */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    color: #fff;
+  }
+  #main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.39);
+  }
+ 
+  html,
+  body {
+    height: 100%;
+  
+    width: 100%;
+  }
+  *::selection {
+    background-color: #fff;
+    color: #1e96c1;
+  }
+  
+  body::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    background: #1e96c1;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  
+    border-radius: 50px;
+  }
+  body {
+    overflow-x: hidden;
+        font-family: Arial, sans-serif;
+        background-color: #1c2128;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    
+  }
+/* //////// */
+ /* NAVBAR */
+ #nav {
+    height: 130px;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.39); */
+    background-color: #211c28;
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    gap: 50px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 999;
+  }
+  #nav img {
+    height: 4.5vw;
+  }
+  #nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.15vw;
+  }
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+  } 
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+    padding:20px;
+    gap: 10px;
+    justify-content: flex-start;
+    /* height:80px;
+    width:40px; */
+}
+
+.btn {
+    /* position: left; */
+    left:0;
+    background-color: transparent;
+    border: 1px solid #1e96c1;
+    color: #7eb5ff;
+    padding: 8px 16px;
+    height:55px;
+    width:110px;
+    cursor: pointer;
+    font-size:20px;
+    border-radius: 5px;
+}
+.btn:hover{
+    left:0;
+    background-color: #7eb5ff;
+    border: 1px solid #01080a;
+    color: transparent;
+    padding: 8px 16px;
+    height:55px;
+    width:110px;
+    color:#1c2128;
+    cursor: pointer;
+    font-size:20px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    /* width: 100%; */
+    left:0;
+    background-color: #7eb5ff;
+    border: 1px solid #01080a;
+    color: transparent;
+    padding: 8px 16px;
+    height:55px;
+    width:110px;
+    color:#1c2128;
+    cursor: pointer;
+    font-size:20px;
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    left:0;
+    background-color: transparent;
+    border: 1px solid #1e96c1;
+    color: #7eb5ff;
+    padding: 8px 16px;
+    height:55px;
+    width:110px;
+    cursor: pointer;
+    font-size:20px;
+    border-radius: 5px;
+}
+
+/* ////// */
+
+/* PAGE 1 */
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+  }
+  #page1 h1 {
+    font-size: 7.5vw;
+    font-weight: 900;
+    position: relative;
+  }
+  #page1 h1::before {
+    content: "SECURITY IS A MYTH";
+    position: absolute;
+    color: #000;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 1.5px #1e96c1;
+    z-index: -1;
+  }
+  #page1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #page1 p {
+    font-size: 1.2vw;
+    font-weight: 500;
+    width: 40%;
+  }
+  #page1 #arrow {
+    height: 250px;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #1e96c1;
+    position: absolute;
+    display: flex;
+    left: -2%;
+    bottom: 0%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+  }
+  #page1 #arrow i {
+    font-size: 50px;
+    font-weight: 100;
+  }
+  #page1 #arrow:hover {
+    scale: 0.4;
+    background-color: #1e96c1;
+  }
+  
+/* PAGE 2 */
+
+#scroller {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  #scroller::-webkit-scrollbar {
+    display: none;
+  }
+  #scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  #scroller h4 {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: gilroy;
+    margin-right: 20px;
+    transition: all linear 0.3s;
+    color: #000;
+    -webkit-text-stroke: 2px #ffffff;
+  }
+  #scroller h4:hover {
+    color: #1e96c1;
+    -webkit-text-stroke: 2px #1e96c1;
+  }
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  
+#about-us {
+    width: 100%;
+
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+  }
+  #about-us img {
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  #about-us-in {
+    width: 50%;
+    text-align: center;
+  }
+  #about-us-in h3 {
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  #about-us-in p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #cards-container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+  }
+  .card {
+    /* height: 80%;
+    width: 24%; */
+    height: 300px;
+    width: 300px;
+    /* background-color: blue; */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+  }
+  #card1 {
+        background-image: url('Images/URL.jpg');
+    }
+
+  #card2 {
+    background-image: url('Images/Security.jpg');
+
+  }
+  #card3 {
+    background-image: url('Images/malaciousness.jpg');
+
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #1e96c1;
+    padding: 30px;
+    padding-top: 160px;
+    opacity: 0;
+    transition: all ease 0.6s;
+  }
+  .overlay h3 {
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+  .overlay p {
+    color: #000;
+    font-size: 18px;
+  }
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  .card:hover {
+    transform: rotate3d(-1, 1, 0, 20deg);
+  }
+  
+  #green-div {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    background: linear-gradient(to left bottom, #1e96c1, #1e96c1);
+  }
+  #green-div h4 {
+    width: 45%;
+    line-height: 50px;
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+  #green-div img {
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+  }
+  
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    /* color: #7eb5ff; */
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #000;
+    -webkit-text-stroke: 2px #ffffff;
+}
+h1:hover{
+    color: #000;
+    -webkit-text-stroke: 2px #1e96c1;
+}
+
+.description {
+    color: #a0a7b0;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #7eb5ff;
+}
+
+.tab.active {
+    border-bottom: 2px solid #7eb5ff;
+}
+
+.file-upload {
+    border: 2px dashed #7eb5ff;
+    padding: 40px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.file-icon {
+    font-size: 48px;
+    color: #7eb5ff;
+    margin-bottom: 20px;
+    /* padding-left: 25px; */
+}
+
+#text {
+    width: 90%;
+}
+
+.signup-box {
+    padding: 40px;
+    max-width: 360px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.terms {
+    font-size: 15px;
+    color: #a0a7b0;
+    margin-top: 30px;
+    width: 1000px; /* You can adjust this width as needed */
+    margin: 0 auto; /* Centers the div itself horizontally */
+    text-align: center; /* Centers the text inside the div */
+}
+
+footer {
+    background-color: #252b33;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    /* color: #ffffff;
+    -webkit-text-stroke: 0.5px #ffffff; */
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-column a {
+    color: #a0a7b0;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #0a3d7e;
+}
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #8f88e1;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1; /* Lower value to keep behind the content */
+    pointer-events: none; /* Ensure cursor doesn't interfere with interactions */
+    transition: all linear 0.1s;
+}
+
+#cursor-blur {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(52, 30, 193, 0.3);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(80px);
+    z-index: 0; /* Even lower to ensure it's behind everything */
+    pointer-events: none;
+    transition: all linear 0.4s;
+}
+/* Media Queries */
+/* Your existing CSS code here */
+
+/* ... (previous CSS remains unchanged) ... */
+
+/* Media Queries */
+
+/* For larger screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    #nav {
+      padding: 0 150px;
+    }
+    
+    #nav img {
+      height: 3.5vw;
+    }
+    
+    #nav h4 {
+      font-size: 1vw;
+    }
+    
+    #page1 h1 {
+      font-size: 6vw;
+    }
+    
+    #page1 p {
+      font-size: 1vw;
+      width: 35%;
+    }
+   
+  }
+  
+  /* For tablets and small screens (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .terms {
+        font-size: 14px;
+        max-width: 90%;
+    }
+    #nav {
+      height: 100px;
+      padding: 0 50px;
+      gap: 30px;
+    }
+    
+    #nav img {
+      height: 6vw;
+    }
+    
+    #nav h4 {
+      font-size: 1.5vw;
+    }
+    
+    #page1 h1 {
+      font-size: 9vw;
+    }
+    
+    #page1 h2 {
+      font-size: 24px;
+    }
+    
+    #page1 p {
+      font-size: 1.5vw;
+      width: 60%;
+    }
+    
+    #page1 #arrow {
+      height: 200px;
+      width: 200px;
+    }
+    
+    #scroller h4 {
+      font-size: 90px;
+    }
+    
+    #about-us {
+      flex-direction: column;
+      padding: 50px 20px;
+    }
+    
+    #about-us img {
+      height: 180px;
+      width: 180px;
+      margin-bottom: 30px;
+    }
+    
+    #about-us-in {
+      width: 100%;
+    }
+    
+    #about-us-in h3 {
+      font-size: 40px;
+    }
+    
+    #cards-container {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 50px 0;
+    }
+    
+    .card {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* For mobile devices (max-width: 767px) */
+  @media (max-width: 767px) {
+    #nav {
+      height: 80px;
+      padding: 0 20px;
+      gap: 20px;
+    }
+    
+    #nav img {
+      height: 8vw;
+    }
+    
+    #nav h4 {
+      font-size: 2vw;
+    }
+    
+    #page1 h1 {
+      font-size: 12vw;
+    }
+    
+    #page1 h2 {
+      font-size: 20px;
+    }
+    
+    #page1 p {
+      font-size: 2vw;
+      width: 80%;
+    }
+    
+    #page1 #arrow {
+      height: 150px;
+      width: 150px;
+    }
+    
+    #scroller h4 {
+      font-size: 60px;
+    }
+    
+    #about-us-in h3 {
+      font-size: 32px;
+    }
+    
+    #about-us-in p {
+      font-size: 16px;
+    }
+    
+    .card {
+      width: 100%;
+    }
+    
+    #green-div {
+      flex-direction: column;
+      height: auto;
+      padding: 30px 0;
+    }
+    
+    #green-div h4 {
+      width: 90%;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    
+    #green-div img {
+      width: 30%;
+    }
+    
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer-column {
+      margin-bottom: 30px;
+    }
+    
+    .terms {
+        font-size: 13px;
+        max-width: 100%;
+    }
+    .btns {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .btns a:nth-child(2) {
+        display: none; /* Hide the second button (Sign up) */
+    }
+
+    .btns a:nth-child(1) {
+        width: 100%; /* Make the first button full width */
+    }
+
+    .btn, .btn-primary {
+        width: 100%;
+        max-width: 200px; /* Limit the maximum width */
+        height: 50px;
+        font-size: 18px;
+    }
+  }
+  
+  /* Preserve animations for all screen sizes */
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  #cursor, #cursor-blur {
+    display: none;
+  }
+  
+  @media (min-width: 1025px) {
+    #cursor, #cursor-blur {
+      display: block;
+    }
+  }

@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #01080a;
+}
+
+/* Container for centering login and signup boxes */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #1c2128; */
+    background-color: #01080a;
+}
+
+/* Shared styles for login and signup boxes */
+.login-box, .signup-box {
+    background-color: rgba(10, 31, 39, 0.4); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 340px;
+    box-shadow: 0 10px 40px rgba(30, 134, 193, 0.5); /* Adjust shadow for better visibility */
+    position: relative;
+}
+
+/* Header styles */
+.login-box h2, .signup-box h2 {
+    color: #97b6d5;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Input field styles */
+.login-box input, .signup-box input {
+    width: 92%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #08152f;
+    /* background-color: #2f363f; */
+    background-color: #97b6d5;
+    color: #01080a;
+    border-radius: 6px;
+}
+
+/* Button styles */
+.login-box button, .signup-box button {
+    width: 60%;
+    padding: 12px;
+    border: none;
+    background-color: #0a4189;
+    color: #131c28;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* .login-box button:hover, .signup-box button:hover {
+    background-color: #5a8bf7;
+} */
+
+/* Paragraph and link styles */
+.login-box p, .signup-box p {
+    margin-top: 15px;
+    text-align: center;
+    color: #97b6d5;
+}
+
+.login-box a, .signup-box a {
+    color: #671f90;
+    text-decoration: none;
+}
+
+.login-box a:hover, .signup-box a:hover {
+    text-decoration: underline;
+}
+
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #8f88e1;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1; /* Lower value to keep behind the content */
+    pointer-events: none; /* Ensure cursor doesn't interfere with interactions */
+    transition: all linear 0.1s;
+}
+
+#cursor-blur {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(52, 30, 193, 0.3);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(80px);
+    z-index: 0; /* Even lower to ensure it's behind everything */
+    pointer-events: none;
+    transition: all linear 0.4s;
+}
+/* Optional: Add responsive design for smaller screens */
+@media (max-width: 600px) {
+    .login-box, .signup-box {
+        padding: 20px;
+        width: 90%;
+    }
+}

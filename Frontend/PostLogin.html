@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirusTotal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="LoginPage.css">
+</head>
+<body>
+    <header id="nav">
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Logo" style="height: 60px;">
+        </div>
+      <h4 style="font-size: 20px;">VEFIRY URLS</h4>
+      <h4 style="font-size: 20px;">SECURITY</h4>
+      <h4 style="font-size: 20px;">CHECK MALICIOUSNESS</h4>
+      <h4 style="font-size: 20px;">MOHAK RATHOD</h4>
+      <h4 style="font-size: 20px;">MIHIR</h4>
+    
+        <!-- <div class="btns">
+            <a href="LoginPage.html">
+                <button class="btn">Sign in</button>
+            </a>
+            
+            <a href="LoginPage.html">
+                <button class="btn-primary">Sign up</button>
+            </a>
+        </div> -->
+    </header>
+    <div id="main">
+    <div id="page1">
+        <h1>SECURITY IS A MYTH</h1>
+        <h2>A Secure Website For All Your URL Queries/Worries</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed, 
+          explicabo nemo omnis eum odit hic inventore quas! Dolorum, quas.
+        </p>
+        <div id="arrow">
+          <i class="ri-arrow-down-line"></i>
+        </div>
+      </div>
+      <br><br><br><br><br>
+      <div id="page2">
+        <div id="scroller">
+          <div id="scroller-in">
+            <h4>VERIFY URLS ,</h4>
+            <h4>CHECK MALICIOUSNESS ,</h4>
+            <h4>SECURITY ,</h4>
+            <h4>MOHAK RATHOD ,</h4>
+            <h4>MIHIR ,</h4>
+          </div>
+          <div id="scroller-in">
+            <h4>VERIFY URLS ,</h4>
+            <h4>CHECK MALICIOUSNESS ,</h4>
+            <h4>SECURITY ,</h4>
+            <h4>MOHAK RATHOD ,</h4>
+            <h4>MIHIR ,</h4>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <div id="about-us">
+          <img
+            src="Images/AI_1.jpg"
+            alt=""
+          />
+          <div id="about-us-in">
+            <h3>ABOUT US</h3>
+            <p>At VirusTotal, we are dedicated to enhancing online safety through our AI-based malicious URL classification and detection system. Our platform utilizes advanced machine learning algorithms to analyze and identify potentially harmful URLs, helping users stay protected from phishing attacks and cyber threats. We strive to create a safer browsing experience for everyone, ensuring that users can navigate the web with confidence.</p>
+          </div>
+          <img
+            src="Images/AI_2.jpg"
+            alt=""
+          />
+        </div>
+        <div id="cards-container">
+
+          <div class="card" id="card1">
+            <div class="overlay">
+              <h3>Verify URLS</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quas aut recusandae iure error, quasi natus!</p>
+            </div>
+          </div>
+          <div class="card" id="card2">
+            <div class="overlay">
+              <h3>Security</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quas aut recusandae iure error, quasi natus!</p>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <div class="overlay">
+              <h3>Maliciousness</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quas aut recusandae iure error, quasi natus!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="green-div">
+        <img
+          src="Images/Img1.jpg"
+          alt="" style="opacity: 0.4;"
+        />
+        <h4>
+            SIGN UP FOR MALICIOUS URL ALERT AND UPDATES.!!
+        </h4>
+        <img
+          src="Images/Img2.jpg"
+          alt="" style="opacity: 0.4;"
+        />
+      </div>
+    </div>
+      
+    <main>
+        <div id="cursor"></div>
+        <div id="cursor-blur"></div>
+        <h1 >VirusTotal</h1>
+        <!-- <p class="description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium atque voluptate<br> 
+            ad accusantium nihil impedit molestias voluptas dolor nesciunt voluptates.
+        </p> -->
+        
+        <div class="wrapper">
+            <div class="tabs">
+                <div class="tab active" id="tab-file">FILE</div>
+                <a href="#"><div class="tab">⮂</div></a>
+                <div class="tab" id="tab-url">URL</div>
+            </div>
+            <!-- Initially visible -->
+            <!-- <div id="switchToFILE" class="file-upload">
+                <div class="file-icon">📄</div>
+                <button class="btn">Choose file</button>
+            </div> -->
+            <div id="switchToFILE" class="file-upload">
+                <div class="file-icon">📄</div>
+                <button class="btn" onclick="document.getElementById('fileInput').click();">Choose file</button>
+                <input type="file" id="fileInput" style="display: none;" onchange="displayFileName()" />
+                <div id="fileName" style="margin-top: 10px;"></div> <!-- To display the file name -->
+                <button class="btn" id="submitButton" style="height: 45px; width: 110px; font-size: 20px;">Submit</button>
+            </div>
+            
+            
+            
+            <!-- Initially hidden -->
+            <form id="switchToURL" class="signup-box" style="display: none;">
+                <input id="text" type="text" placeholder="Enter URL" required>
+                <button type="submit" class="btn btn-primary2">Submit</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+        <p class="terms">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.<a href="#">Terms of Service</a> and <a href="#">Privacy Notice</a>,Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, architecto suscipit?<br>Lorem ipsum dolor sit amet consectetur adipisicing.<a href="#">Learn more</a>.
+        </p>
+    </main>
+    <br>
+
+    <footer>
+        <div class="footer-content">
+            <div style="font-size: 24px;" class="footer-column">
+                <h3 style="font-size: 20px;" class="h">Our Team</h3>
+                <a href="#">Mohak Rathod</a>
+                <a href="#">Aditya Chapele</a>
+                <a href="#">Mihir VIshwakarma</a>
+                <a href="#">Om Amarchheda</a>
+            </div>
+            <div class="footer-column">
+                <h3 style="font-size: 20px;" class="h">Other Services</h3>
+                <a  href="#">Service 1</a>
+                <a href="#">Service 2</a>
+                <a href="#">Service 3</a>
+                <a href="#">Service 4</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+//CURSOR ANIMATION  PART
+var crsr = document.querySelector("#cursor");
+var blur = document.querySelector("#cursor-blur");
+
+document.addEventListener("mousemove", function (dets) {
+  crsr.style.left = dets.x + "px";
+  crsr.style.top = dets.y + "px";
+  blur.style.left = dets.x - 250 + "px";
+  blur.style.top = dets.y - 250 + "px";
+
+  crsr.style.zIndex = "1";  
+  blur.style.zIndex = "0";  
+});
+
+var h4all = document.querySelectorAll("#nav h4");
+h4all.forEach(function (elem) {
+  elem.addEventListener("mouseenter", function () {
+    crsr.style.scale = 3;
+    crsr.style.border = "1px solid #fff";
+    crsr.style.backgroundColor = "transparent";
+  });
+  elem.addEventListener("mouseleave", function () {
+    crsr.style.scale = 1;
+    crsr.style.border = "0px solid #95C11E";
+    crsr.style.backgroundColor = "#95C11E";
+  });
+});
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const fileTab = document.getElementById('tab-file');
+            const urlTab = document.getElementById('tab-url');
+            const fileUploadDiv = document.getElementById('switchToFILE');
+            const urlDiv = document.getElementById('switchToURL');
+
+            urlTab.addEventListener('click', function() {
+                // Hide FILE section and show URL section
+                fileUploadDiv.style.display = 'none';
+                urlDiv.style.display = 'block';
+
+                // Update tab classes
+                fileTab.classList.remove('active');
+                urlTab.classList.add('active');
+            });
+
+            fileTab.addEventListener('click', function() {
+                // Hide URL section and show FILE section
+                urlDiv.style.display = 'none';
+                fileUploadDiv.style.display = 'block';
+
+                // Update tab classes
+                urlTab.classList.remove('active');
+                fileTab.classList.add('active');
+            });
+        });
+
+        function displayFileName() {
+    const fileInput = document.getElementById('fileInput');
+    const fileNameDisplay = document.getElementById('fileName');
+
+    // Get the selected file name
+    if (fileInput.files.length > 0) {
+        const fileName = fileInput.files[0].name;
+        fileNameDisplay.textContent = fileName; // Display the file name
+    } else {
+        fileNameDisplay.textContent = ''; // Clear if no file is selected
+    }
+}
+
+    </script>
+</body>
+</html>
