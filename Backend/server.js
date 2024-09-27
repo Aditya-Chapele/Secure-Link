@@ -75,7 +75,7 @@ app.use(express.static(path.join(__dirname, '../Frontend')));
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'Chaitu@2020',
+  password: 'password',
   database: 'login',
 });
 
